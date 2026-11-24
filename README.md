@@ -3,6 +3,7 @@
 **Mensajería Local-First, cifrada de extremo a extremo (E2EE) y con red Mesh offline — sin número de teléfono, sin tarjeta SIM y sin depender de servidores centrales.**
 
 [![Latest Release](https://img.shields.io/github/v/release/Josepe-Dev/Relay?style=flat-square&label=Release)](https://github.com/Josepe-Dev/Relay/releases/latest)
+[![Mesh Core CI](https://img.shields.io/github/actions/workflow/status/Josepe-Dev/Relay/ci-mesh-core.yml?branch=main&style=flat-square&label=mesh-core%20CI)](https://github.com/Josepe-Dev/Relay/actions/workflows/ci-mesh-core.yml)
 [![Web App](https://img.shields.io/badge/Web%20PWA-chat.josepe.dev-0ea5e9?style=flat-square)](https://chat.josepe.dev)
 [![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-7F52FF?style=flat-square)](#descargas)
 [![E2EE](https://img.shields.io/badge/Crypto-ECDH%20P--256%20%2B%20AES--256--GCM-10b981?style=flat-square)](./docs/e2ee-and-jcb.md)
@@ -95,6 +96,7 @@ Todas las compilaciones oficiales firmadas (incluyendo auto-actualizaciones in-a
 - [**Red Mesh Offline y Transporte**](./docs/mesh-network.md) — Multiplexor de transporte, Bandwidth Upgrade (BWU), detección por interfaces de kernel + RTT, Dijkstra + Gossip, transferencias *Pull* y Battery Guardian.
 - [**Llamadas, Videollamadas y WebRTC**](./docs/calls-and-webrtc.md) — Contrato `CallManager`, WebRTC en LAN sin STUN/TURN, soporte de Mobile Hotspot (SoftAP), llamadas Opus por Nearby y estabilidad JCEF/Android.
 - [**Seguridad y reporte de vulnerabilidades**](./SECURITY.md) — Cómo reportar fallos de seguridad de forma responsable.
+- [**Módulo KMP `:packages:mesh-core`**](./packages/mesh-core) — Implementación Kotlin Multiplatform pura del motor de enrutamiento Mesh (Dijkstra ponderado, Split-Horizon Gossip, planificador QoS de dos colas, transferencias *Pull-Based* con SHA-256 y cuotas) con suite de tests en `commonTest`.
 
 ---
 
